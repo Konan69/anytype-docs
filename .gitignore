@@ -1,0 +1,52 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Production
+/build
+
+# Generated files
+.docusaurus
+.cache-loader
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore everything outside of anytype-docs
+# This is for when the repo is at the root level
+/anytype-ts/
+/anytype-heart/
+/any-block/
+/anysync/
+/any-sync-dockercompose/
+/hugo/
+
+/mkdocs.yml
+
+
+# But still ignore node_modules and build directories inside anytype-docs
+anytype-docs/node_modules/
+anytype-docs/.docusaurus/
+anytype-docs/build/
+
+# Common system files
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Also don't ignore .gitignore and README.md
+!.gitignore
+!README.md 
