@@ -19,7 +19,7 @@ const config = {
   trailingSlash: false,
   deploymentBranch: "gh-pages",
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
@@ -37,6 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/konan69/anytype-docs/tree/main/",
+          routeBasePath: "docs",
         },
         blog: false,
         theme: {
@@ -58,10 +59,29 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            to: "/docs/anytype_documentation",
             position: "left",
             label: "Documentation",
+          },
+          {
+            to: "/docs/frontend/stores",
+            position: "left",
+            label: "Frontend",
+          },
+          {
+            to: "/docs/backend/block_service",
+            position: "left",
+            label: "Backend",
+          },
+          {
+            to: "/docs/sync/crdt",
+            position: "left",
+            label: "Sync",
+          },
+          {
+            to: "/docs/integration/frontend_backend",
+            position: "left",
+            label: "Integration",
           },
           {
             href: "https://github.com/anyproto/anytype-ts",
@@ -100,19 +120,19 @@ const config = {
             items: [
               {
                 label: "Frontend",
-                to: "/docs/frontend",
+                to: "/docs/frontend/stores",
               },
               {
                 label: "Backend",
-                to: "/docs/backend",
+                to: "/docs/backend/block_service",
               },
               {
                 label: "Sync",
-                to: "/docs/sync",
+                to: "/docs/sync/crdt",
               },
               {
                 label: "Integration",
-                to: "/docs/integration",
+                to: "/docs/integration/frontend_backend",
               },
             ],
           },

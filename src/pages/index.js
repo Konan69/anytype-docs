@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
@@ -54,11 +53,44 @@ export default function Home() {
                   Anytype codebase, including its architecture, components, and
                   how they interact with each other.
                 </p>
+
+                <h3>Documentation Sections</h3>
+                <ul>
+                  <li>
+                    <Link to="/docs/anytype_documentation">
+                      Main Documentation
+                    </Link>{" "}
+                    - Overview of the Anytype system
+                  </li>
+                  <li>
+                    <Link to="/docs/anytype_component_relationships">
+                      Component Relationships
+                    </Link>{" "}
+                    - How components interact
+                  </li>
+                  <li>
+                    <Link to="/docs/frontend/stores">Frontend</Link> -
+                    TypeScript frontend implementation
+                  </li>
+                  <li>
+                    <Link to="/docs/backend/block_service">Backend</Link> - Go
+                    backend services
+                  </li>
+                  <li>
+                    <Link to="/docs/sync/crdt">Sync</Link> - CRDT
+                    synchronization system
+                  </li>
+                  <li>
+                    <Link to="/docs/integration/frontend_backend">
+                      Integration
+                    </Link>{" "}
+                    - Frontend-Backend integration
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <HomepageFeatures />
       </main>
     </Layout>
   );

@@ -31,37 +31,21 @@ const sidebars = {
     {
       type: "category",
       label: "Frontend",
-      link: {
-        type: "doc",
-        id: "frontend/index",
-      },
       items: ["frontend/stores"],
     },
     {
       type: "category",
       label: "Backend",
-      link: {
-        type: "doc",
-        id: "backend/index",
-      },
-      items: ["backend/block_service"],
+      items: ["backend/block_service", "backend/object_store"],
     },
     {
       type: "category",
       label: "Sync",
-      link: {
-        type: "doc",
-        id: "sync/index",
-      },
       items: ["sync/crdt"],
     },
     {
       type: "category",
       label: "Integration",
-      link: {
-        type: "doc",
-        id: "integration/index",
-      },
       items: ["integration/frontend_backend"],
     },
   ],
